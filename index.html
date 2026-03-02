@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Micah Blanton — Engineering & Tech</title>
+  <title>Micah Blanton — Engineering Tech</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +11,63 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="banner-image-wrapper">
+    <img 
+      src="images/banner.png" 
+      alt="The more you know banner"
+      class="banner-image"
+    />
+  </div>
+  <style>
+    .banner-image-wrapper {
+      width: 82%;
+      margin: 2rem auto 1.5rem auto;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-image {
+      width: 100%;
+      display: block;
+      border-radius: 32px;
+      box-shadow: 0 0 32px 4px rgba(131,56,236,0.35), 0 0 0 8px rgba(255,255,255,0.08) inset;
+      border: 7px solid transparent;
+      background: linear-gradient(
+        90deg, 
+        #ff006e, #8338ec, #3a86ff, #06d6a0, #ffbe0b, #fb5607, #ff006e
+      );
+      background-size: 300% 300%;
+      background-position: 0% 50%;
+      animation: rainbow-border-move 5s linear infinite;
+      /* Rainbow border trick with background-clip */
+      -webkit-background-clip: padding-box, border-box;
+      background-clip: padding-box, border-box;
+      border-image: none;
+      position: relative;
+      z-index: 2;
+    }
+    /* Fix for proper rainbow border: use double border layering */
+    .banner-image {
+      padding: 0.25em;
+      background: 
+        linear-gradient(#0a0a0f, #26204d) padding-box, /* inner bg */
+        linear-gradient(90deg, #ff006e, #8338ec, #3a86ff, #06d6a0, #ffbe0b, #fb5607, #ff006e) border-box; /* border */
+      border: 7px solid transparent;
+      border-radius: 32px;
+      animation: rainbow-border-move 6s linear infinite;
+      box-shadow: 0 0 32px 4px rgba(131,56,236,0.35), 0 0 0 8px rgba(255,255,255,0.08) inset;
+    }
+    @keyframes rainbow-border-move {
+      0% {
+        background-position: 0% 50%, 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%, 100% 50%;
+      }
+    }
+  </style>
   <div id="p5-canvas"></div>
   <audio
     id="bg-music"
@@ -101,6 +158,16 @@
             color: #222;
           }
         </style>
+
+        <li>
+          <span class="exp-company">
+            <a href="https://www.starcloud.com/" target="_blank" rel="noopener">Starcloud</a>
+          </span> – Redmond, WA |
+          <span class="exp-role">Wire Harnessing Technician</span> | Jan. 2026 ~
+          <ul>
+            <li>In Progress...</li>
+          </ul>
+        </li>
 
         <li>
           <span class="exp-company">
