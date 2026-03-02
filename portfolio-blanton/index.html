@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micah Blanton — Engineering & Tech</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="p5-canvas"></div>
+  <audio
+    id="bg-music"
+    src="audio/orbital-goth-rave.mp3"
+    preload="auto"
+    loop
+    controls
+    style="position: fixed; bottom: 1rem; right: 1rem; opacity: 0.35; z-index: 10;"
+  ></audio>
+
+  <main class="content">
+    <header class="hero">
+      <h1 class="name glitch" data-text="Micah Blanton">Micah Blanton</h1>
+      <p class="tagline">Engineering Tech</p>
+      <a href="mailto:MicahBlanton86@gmail.com" class="email-link">MicahBlanton86@gmail.com</a>
+    </header>
+
+    <section id="summary" class="section">
+      <h2 class="section-title">Summary</h2>
+      <p class="section-text">Multi-disciplinary technician with
+        hands-on experience in industrial
+        maintenance, semiconductor facilities,
+        data centers, and aerospace fabrication.
+        Experience in LOTO, power infrastructure,
+        robotic handling systems, and precision
+        avionics tooling. Combines strong
+        diagnostics, technical documentation, and
+        cross-functional coordination with
+        engineering teams. Seeking a role driving
+        continuous improvement.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Highlighted Projects</h2>
+      <ul class="project-list">
+        <li>
+          Semiconductor manufacturing UPS support &amp; hardware servicing
+          (<a href="https://www.intel.com/" target="_blank" rel="noopener">Intel</a> – 2024).
+        </li>
+        <li>
+          Electromechanical aerospace part fabrication and assembly
+          (<a href="https://www.starfishspace.com/" target="_blank" rel="noopener">Starfish</a> &amp;
+          <a href="https://www.starcloud.com/" target="_blank" rel="noopener">Starcloud</a> – 2024–26).
+        </li>
+        <li>
+          Environmental test &amp; failure resolution on avionics systems
+          (<a href="https://www.starfishspace.com/" target="_blank" rel="noopener">Starfish</a> – 2025).
+        </li>
+        <li>
+          AWS resource monitoring &amp; uptime automation
+          (<a href="https://www.experientialtechnologies.com/" target="_blank" rel="noopener">XPT</a> – 2024–25).
+        </li>
+      </ul>
+    </section>
+
+    <section id="competencies" class="section">
+      <h2 class="section-title">Core Competencies</h2>
+      <p class="section-text">Preventive & Corrective Maintenance • Mechanical Assembly • Hydraulics • Electrical
+        Systems • Industrial UPS • Avionics & Harnessing • Soldering • Data Center Hardware •
+        LOTO Procedures • ERP Systems • SLA/Ticket Systems • AWS (Automation & Resource
+        Mgmt) • Technical Documentation • RCA • Cleanroom Safety • Identity Controls (AD, IAM)</p>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section-title">Professional Experience</h2>
+      <ul class="experience-list">
+        <style>
+          .exp-company a,
+          .exp-company {
+            font-size: 1.25em;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--rainbow-1), var(--rainbow-4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+          .exp-company a:visited {
+            text-decoration: underline;
+            color: #1e60b0;
+          }
+          .exp-role {
+            font-style: italic;
+            color: #ffffff;
+          }
+          .exp-title {
+            font-weight: bold;
+            color: #222;
+          }
+        </style>
+
+        <li>
+          <span class="exp-company">
+            <a href="https://www.starfishspace.com/" target="_blank" rel="noopener">Starfish Space</a>
+          </span> – Tukwila, WA |
+          <span class="exp-role">Aerospace Technician</span> | Feb. – May 2025 (Contract)
+          <ul>
+            <li>Operated hydraulic tooling for precision aerospace part fabrication and assembly.</li>
+            <li>Performed root cause analysis on termination failures, collaborating with OEM engineers.</li>
+            <li>Executed structured QC and electromagnetic susceptibility (EMS) testing up to 40&nbsp;GHz.</li>
+            <li>Manufactured avionics prototypes and GSE from design stacks (Altium, SolidWorks).</li>
+            <li>Developed modular execution workflows reducing QC error frequency by ~50%.</li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="exp-company">
+            <a href="https://www.starcloud.com/" target="_blank" rel="noopener">Starcloud</a>
+          </span> – Redmond, WA |
+          <span class="exp-role">Soldering Technician</span> | Nov. – Dec. 2024 (Project)
+          <ul>
+            <li>Fabricated assemblies using hydraulic cold-welding and high-reliability fastening.</li>
+            <li>Assembled PCBs, harnesses, and embedded compute modules from evolving schematics.</li>
+            <li>Supported thermodynamic calibration and qualification testing for sensor networks.</li>
+            <li>Enforced strict ESD and clean manufacturing standards during organizational transitions.</li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="exp-company">
+            <a href="https://www.experientialtechnologies.com/" target="_blank" rel="noopener">Experiential Technologies</a>
+          </span>
+          – Austin, TX |
+          <span class="exp-role">Director of Operations</span> | Sep. 2024 – Feb. 2025
+          <ul>
+            <li>Architected AWS identity structures and finance-aware resource allocation.</li>
+            <li>Integrated and migrated SaaS platforms for law enforcement, tech, and entertainment clients (Meta, Dell, etc).</li>
+            <li>Managed asset inventories, SLA monitoring, and endpoint infrastructure similar to BMS/SCADA logic.</li>
+            <li>Coordinated with engineering teams to support reliable continuous deployment.</li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="exp-company">
+            <a href="https://www.compucom.com/" target="_blank" rel="noopener">CompuCom</a>
+            /
+            <a href="https://www.intel.com/" target="_blank" rel="noopener">Intel</a>
+          </span>
+          – Seattle, WA / Hillsboro, OR | <span class="exp-role">Field Service &amp; Network Technician</span> | Jun. 2023 – Sep. 2024
+          <ul>
+            <li>Supported industrial compute and network infrastructure inside active semiconductor fabrication facilities.</li>
+            <li>Applied LOTO protocols during equipment service and rack-level operations.</li>
+            <li>Managed SLAs in industrial UPS, power reliability systems, and controlled-access data center environments.</li>
+            <li>Serviced servers and network hardware (HDDs, PSUs, NICs, motherboards) across Windows and Linux platforms.</li>
+            <li>Documented work with ERP systems integrated with AD and corporate access controls.</li>
+            <li>Coordinated with facilities and engineering to maintain uptime and safety compliance.</li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="exp-company">
+            <a href="https://www.williamssignal.com/" target="_blank" rel="noopener">Williams Signal</a>
+          </span>
+          – Austin, TX | <span class="exp-role">IT Technician</span> | Jun. 2022 – Jun. 2023 (Contract)
+          <ul>
+            <li>Installed and maintained networked AV and compute systems for large venues.</li>
+            <li>Diagnosed low-voltage signal chains, optimized routing hardware, and documented configurations.</li>
+            <li>Supported mechanical rigging, infrastructure builds, and troubleshooting for live events.</li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="exp-company">
+            <a href="https://www.atmosphere.tv/" target="_blank" rel="noopener">Atmosphere TV</a>
+          </span>
+          – Austin, TX | <span class="exp-role">IT Liaison, Content Acquisition</span> | May – Dec. 2021
+          <ul>
+            <li>Optimized database structures, automated workflows to reduce repetitive failure points.</li>
+            <li>Supported technical content onboarding systems and partner communication pipelines.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <ul class="section-text">
+        <li>
+          <strong>Master of Science, Information Systems</strong> &mdash; Syracuse University <em>(In Progress)</em>
+        </li>
+        <li>
+          <strong>Bachelor of Science, Communications</strong> &mdash; University of Texas at Austin <em>(May 2023)</em>
+        </li>
+      </ul>
+    </section>
+
+    <section id="certifications" class="section">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certifications-expandable">
+        <p class="section-text certifications-toggle">
+          Industry certifications and credentials.
+          <span class="expand-arrow" aria-hidden="true">&#x25BC;</span>
+        </p>
+        <audio id="plasma-sound" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124b79a82b.mp3" preload="auto"></audio>
+        <ul class="certifications-list" style="max-height: 0; overflow: hidden; transition: max-height 3s cubic-bezier(0.7,0.1,0.3,1);">
+          <li class="planet planet-mercury">MobileTech V3</li>
+          <li class="planet planet-venus">The Electrophotographic Process</li>
+          <li class="planet planet-earth">C792, X792 Service Certification Course</li>
+          <li class="planet planet-mars">CS720, CS725, CS727, CS728, C4150, CX725, CX727, XC4140, XC4143, XC4150, XC4153 Service Certification Course</li>
+          <li class="planet planet-jupiter">MS321, MS421, MS521, M124x, B2338, B2442, B2546, MB2338, MB2442, MB2546, MX321, MX421, MX52x, XM1242, XM1246 Service Certification Course</li>
+          <li class="planet planet-saturn">HPDesktopLaptopCert</li>
+          <li class="planet planet-uranus">C101_LabInstructions</li>
+          <li class="planet planet-neptune">C101_TroubleshootingAWiredNetwork</li>
+          <li class="planet planet-mercury">C101_Cat6WallJackTermination</li>
+          <li class="planet planet-venus">C101_TestingYourCablingLab</li>
+          <li class="planet planet-earth">C101_KeystoneConnectorBlocks</li>
+          <li class="planet planet-mars">C101_110BlockConnection</li>
+          <li class="planet planet-jupiter">C101_66BlockConnection</li>
+          <li class="planet planet-saturn">C101_WiringCableConnectorEnds</li>
+          <li class="planet planet-uranus">C101_LabKitAndToolsCert</li>
+          <li class="planet planet-neptune">C101_DMARCCert</li>
+          <li class="planet planet-mercury">SecurityComplianceCert</li>
+          <li class="planet planet-venus">MS315, MS415, MS417, MS510, MS517, MS610, MS617, M1145, M3150, MX310, MX317, MX410, MX417, MX510, MX511, MX517, MX610, MX611, MX617de, XM3150, XM1135, XM1140, XM1145 Service Certification Course</li>
+          <li class="planet planet-earth">MS331dn, MS431, M1342, B3340, B3442, MX331, MX431, XM1342, MB3442, M1342, XM1342 Service Certification Course</li>
+          <li class="planet planet-mars">MS531, MS631, MS632, M3350, MX532, MX632, and XM3350 Service Certification Course</li>
+          <li class="planet planet-jupiter">MS725, MS821, MS822, MS823, MS825, MS826, MX721, MX722, MB2770, MX725, XM5365, XM5370, MX822, MX826, XM7355, XM7370 Service Certification Course</li>
+          <li class="planet planet-saturn">Security Awareness and Privacy Training - 2024</li>
+          <li class="planet planet-uranus">CS730, CS735, CS737, C4342, C4352, CX730, CX735, CX737, XC4342, XC4352 Service Certification Course</li>
+          <li class="planet planet-neptune">2016 Lexmark Device UI</li>
+          <li class="planet planet-mercury">Color Science and Theory</li>
+          <li class="planet planet-venus">MS911, MX910, MX911, MX912, XM9145, XM9155, XM9165 Service Certification Course</li>
+          <li class="planet planet-earth">2024 State Farm ISAPT Training</li>
+          <li class="planet planet-mars">Soft Skills Training for Technicians</li>
+          <li class="planet planet-jupiter">Printer Memory and NVRAM</li>
+          <li class="planet planet-saturn">Lexmark 2022 New Technologies</li>
+          <li class="planet planet-uranus">Color Electrophotographic (EP) Process</li>
+          <li class="planet planet-neptune">Mono Electrophotographic (EP) Process</li>
+          <li class="planet planet-mercury">2024 Lexmark Device UI</li>
+          <li class="planet planet-venus">Introduction to Lexmark Firmware</li>
+          <li class="planet planet-earth">T-Mobile_ 101 – Introduction to the Demarc and Wiring Training - 2020</li>
+          <li class="planet planet-mars">TMO_C101_DMARCCert</li>
+          <li class="planet planet-jupiter">HPE_StandardProLiantAndBladeServerServiceAndSolutionQualificationCert</li>
+          <li class="planet planet-saturn">MobileTechV4</li>
+        <ul class="certifications-list">
+          <li>MobileTech V3</li>
+          <li>The Electrophotographic Process</li>
+          <li>C792, X792 Service Certification Course</li>
+          <li>CS720, CS725, CS727, CS728, C4150, CX725, CX727, XC4140, XC4143, XC4150, XC4153 Service Certification Course</li>
+          <li>MS321, MS421, MS521, M124x, B2338, B2442, B2546, MB2338, MB2442, MB2546, MX321, MX421, MX52x, XM1242, XM1246 Service Certification Course</li>
+          <li>HPDesktopLaptopCert</li>
+          <li>C101_LabInstructions</li>
+          <li>C101_TroubleshootingAWiredNetwork</li>
+          <li>C101_Cat6WallJackTermination</li>
+          <li>C101_TestingYourCablingLab</li>
+          <li>C101_KeystoneConnectorBlocks</li>
+          <li>C101_110BlockConnection</li>
+          <li>C101_66BlockConnection</li>
+          <li>C101_WiringCableConnectorEnds</li>
+          <li>C101_LabKitAndToolsCert</li>
+          <li>C101_DMARCCert</li>
+          <li>SecurityComplianceCert</li>
+          <li>MS315, MS415, MS417, MS510, MS517, MS610, MS617, M1145, M3150, MX310, MX317, MX410, MX417, MX510, MX511, MX517, MX610, MX611, MX617de, XM3150, XM1135, XM1140, XM1145 Service Certification Course</li>
+          <li>MS331dn, MS431, M1342, B3340, B3442, MX331, MX431, XM1342, MB3442, M1342, XM1342 Service Certification Course</li>
+          <li>MS531, MS631, MS632, M3350, MX532, MX632, and XM3350 Service Certification Course</li>
+          <li>MS725, MS821, MS822, MS823, MS825, MS826, MX721, MX722, MB2770, MX725, XM5365, XM5370, MX822, MX826, XM7355, XM7370 Service Certification Course</li>
+          <li>Security Awareness and Privacy Training - 2024</li>
+          <li>CS730, CS735, CS737, C4342, C4352, CX730, CX735, CX737, XC4342, XC4352 Service Certification Course </li>
+          <li>2016 Lexmark Device UI</li>
+          <li>Color Science and Theory</li>
+          <li>MS911, MX910, MX911, MX912, XM9145, XM9155, XM9165 Service Certification Course</li>
+          <li>2024 State Farm ISAPT Training</li>
+          <li>Soft Skills Training for Technicians</li>
+          <li>Printer Memory and NVRAM</li>
+          <li>Lexmark 2022 New Technologies</li>
+          <li>Color Electrophotographic (EP) Process</li>
+          <li>Mono Electrophotographic (EP) Process</li>
+          <li>2024 Lexmark Device UI</li>
+          <li>Introduction to Lexmark Firmware</li>
+          <li>T-Mobile_ 101 – Introduction to the Demarc and Wiring Training - 2020</li>
+          <li>TMO_C101_DMARCCert</li>
+          <li>HPE_StandardProLiantAndBladeServerServiceAndSolutionQualificationCert</li>
+          <li>MobileTechV4</li>
+          <li>MobileTech</li>
+          <li>2446_3_133908_1697158264_Lenovo Learning  Course Default</li>
+          <li>lp_55_4_133908_1697161545_Lenovo Learning Plan Default</li>
+          <li>2447_3_133908_1693005965_Lenovo Learning  Course Default</li>
+          <li>2190_3_133908_1692835278_Lenovo Learning  Course Default</li>
+          <li>lp_58_4_133908_1692750224_Lenovo Learning Plan Default</li>
+          <li>HPE_ProLiantServerFoundationCert</li>
+          <li>SecurityComplianceCert2</li>
+          <li>DellPoweredgeCorrectiveMaintenanceCert</li>
+          <li>DellClientFoundationsCert</li>
+          <li>711CashDrawerDifferencesCert</li>
+          <li>SFP4Cert</li>
+          <li>SFP5Cert</li>
+          <li>SFP7Cert</li>
+          <li>SFP6Cert</li>
+          <li>Data Security Notice</li>
+          <li>eTask User Interface</li>
+          <li>Lexmark Safety Alert Symbol</li>
+          <li>Mirrored NVRAM (Second Edition)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="honors" class="section">
+      <h2 class="section-title">Honors & Activities</h2>
+      <ul class="experience-list" style="list-style: none; padding-left: 0;">
+        <li>🪐 Salutatorian</li>
+        <li>🪐 Phi Theta Kappa Honors</li>
+        <li>🪐 National Honors</li>
+        <li>🪐 Sigma Alpha Lambda Honors</li>
+        <li>🪐 (ISC)² Distinguished Director</li>
+        <li>🪐 Microsoft BlueHat</li>
+        <li>🪐 Amazon Leo (Propulsion Lab Technician III)</li>
+        <li>🪐 UW ECE Non-Matriculated Coursework</li>
+        <li>🪐 NW Etch Defense Quality Analyst</li>
+        <li>🪐 YWCA IT Manager</li>
+        <li>🪐 Boys &amp; Girls Club Volunteer</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>Micah Blanton — Engineering & Tech</p>
+      <a href="mailto:MicahBlanton86@gmail.com">Contact</a>
+    </footer>
+  </main>
+
+  <script src="sketch.js"></script>
+  <script>
+    (function () {
+      const audio = document.getElementById('bg-music');
+      if (!audio) return;
+
+      if (!window.audioReactive) {
+        window.audioReactive = {
+          ctx: null,
+          analyser: null,
+          dataArray: null,
+          level: 0,
+          bands: new Array(16).fill(0),
+        };
+      }
+
+      function toggleAudio() {
+        const AR = window.audioReactive;
+        if (audio.paused) {
+          audio.play()
+            .then(() => {
+              // Lazily create analyser graph after successful play
+              if (!AR.analyser) {
+                try {
+                  const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                  if (!AudioCtx) return;
+
+                  const ctx = new AudioCtx();
+                  const source = ctx.createMediaElementSource(audio);
+                  const analyser = ctx.createAnalyser();
+                  analyser.fftSize = 256;
+                  const dataArray = new Uint8Array(analyser.frequencyBinCount);
+                  source.connect(analyser);
+                  analyser.connect(ctx.destination);
+
+                  AR.ctx = ctx;
+                  AR.analyser = analyser;
+                  AR.dataArray = dataArray;
+
+                  function update() {
+                    if (!AR.analyser) return;
+
+                    AR.analyser.getByteFrequencyData(AR.dataArray);
+                    const len = AR.dataArray.length;
+
+                    let sum = 0;
+                    for (let i = 0; i < len; i++) sum += AR.dataArray[i];
+                    AR.level = (sum / len) / 255;
+
+                    const bandCount = AR.bands.length;
+                    const bandSize = Math.floor(len / bandCount) || 1;
+                    for (let b = 0; b < bandCount; b++) {
+                      let bs = 0;
+                      for (let j = 0; j < bandSize; j++) {
+                        const idx = b * bandSize + j;
+                        if (idx >= len) break;
+                        bs += AR.dataArray[idx];
+                      }
+                      AR.bands[b] = (bs / (bandSize * 255)) || 0;
+                    }
+
+                    requestAnimationFrame(update);
+                  }
+
+                  ctx.resume().then(update).catch(() => {
+                    // If resume fails, visualizer just won't run.
+                  });
+                } catch (e) {
+                  // If audio graph creation fails, just keep audio playing.
+                }
+              }
+            })
+            .catch(() => {
+              // Autoplay might be blocked; user can click or use controls again.
+            });
+        } else {
+          audio.pause();
+        }
+      }
+
+      window.addEventListener('pointerdown', toggleAudio);
+    })();
+  </script>
+</body>
+</html>
