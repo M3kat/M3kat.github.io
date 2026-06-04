@@ -1,4 +1,4 @@
-# Micah Blanton — Portfolio
+# Portfolio
 
 A single-page portfolio with a **trippy** look: P5.js background (morphing blobs, particles, wave ribbons, mouse-reactive glow) and trippy typography/UI.
 
